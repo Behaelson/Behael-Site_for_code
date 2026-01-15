@@ -32,7 +32,8 @@ footer {
 #footer_content {
     background-color: var(--color-background-footer);
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
     padding: 3rem 3.5rem;
 }
 
@@ -99,6 +100,22 @@ footer {
     color: #423290;
 }
 
+.footer-contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.footer-contact-list .footer-link {
+    color: var(--color-link-text);
+    transition: all 0.35s;
+}
+
+.footer-contact-list .footer-link:hover {
+    color: #423290;
+}
+
 #footer_subscribe {
     display: flex;
     flex-direction: column;
@@ -107,6 +124,15 @@ footer {
 
 #footer_subscribe p {
     color: var(--color-link-text);
+}
+
+#footer_subtitle {
+    text-align: left;
+    background-color: var(--color-background-footer);
+    font-size: 1.25rem;
+    /* padding: 1rem; */
+    font-weight: 250;
+    gap: 0.5rem;
 }
 
 #input_group {
